@@ -5,7 +5,7 @@ OUTDIR=$(pwd)/out
 # Base image for building
 if [ "$BASEIMAGE" = "" ]
 then
-    BASEIMAGE=ubuntu:20.04
+    BASEIMAGE=debian:buster
 fi
 
 # Current user - to make current user owner of output .deb files.
