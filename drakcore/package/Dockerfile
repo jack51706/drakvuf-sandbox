@@ -9,6 +9,7 @@ RUN apt-get update && \
     apt install -y ./dh-virtualenv.deb && \
     curl -sL https://deb.nodesource.com/setup_13.x | bash - && \
     apt-get install -y nodejs && \
+    python3 -m pip install pip && \
     pip3 install virtualenv
 
 COPY drakcore /build
